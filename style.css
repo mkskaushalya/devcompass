@@ -1,0 +1,78 @@
+:root{
+    --first-color: #17173f;
+    /* --second-color: #eaa500; */
+   /* --second-color: #f5AF00; rgb(245 175 0)*/
+    --second-color: #F5B041; /*rgb(245 175 0)*/
+    --hover-sec-color: #f5AF00aa; /*rgb(245 175 0)*/
+    --third-color: #fff;
+    --foth-color: #17173fa8;
+
+    --lightyellow: #ffffdd;
+    --lightyellow2: #c8c8b9;
+    --lightblue: #c4c4ff;
+    --subheading-color: #37376f;
+    --white: #fff;
+
+    /* Special */
+    --blue: #0d6efd;
+    --red: #df1529;
+    --green: #059652;
+    --teal: #20c997;
+
+    --font-color : #34495E;
+    --link-color: #99f;
+    --graya:#aaa;
+    --grayaf:#afafaf;
+    --graydf:#dfdfdf;
+    --grayf0:#f0f0f0;
+
+
+    --main-padding: 0 10rem;
+    
+    --nav-padding: var(--main-padding);
+
+    --trans: all ease-in-out 0.3s;
+
+}
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: var(--font-color);
+    box-sizing: border-box;
+    transition: var(--trans);
+    transition: all ease-in-out 0.3s;
+    scroll-behavior: smooth;
+    
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
