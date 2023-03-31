@@ -129,6 +129,7 @@ header div img{
 }
 .bghero svg{
     width: 100%;
+    min-height: 100vh;
     max-height: 100vh;
     object-fit: cover;
 }
@@ -144,7 +145,7 @@ header div img{
     color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
-    transition: none;
+    border: 3px solid var(--primary-pink);
 
 }
 .cont a .rocket{
@@ -156,5 +157,53 @@ header div img{
 }
 .cont a .rocket svg path{
     fill: #fff;
-    transition: none;
+}
+
+.cont a:hover{
+    background-color: transparent;
+    color: var(--primary-pink);
+
+}
+.cont a:hover .rocket svg path{
+    fill: var(--primary-pink);
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 0 10px;
+        height: 80px;
+    }
+    header div{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+    }
+    header div img{
+        max-height: 100%;
+        height: 50px;
+    }
+    .cont h1{
+        font-size: 2rem;
+        
+    }
+    .cont h2{
+        margin-top: -10px;
+        font-size: 1rem;
+        
+    }
+
+    .cont{
+        padding: 0 10px;
+    }
+
+    .cont a{
+        font-size: 1.2rem;
+    
+    }
+    .cont a .rocket{
+        height: 25px;
+        width: 25px;
+    }
 }
