@@ -217,3 +217,101 @@ header div img{
         width: 25px;
     }
 }
+
+
+
+.compasstest{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    position: relative;
+    margin-bottom: -15px;
+}
+.circlle, .arrow{
+    position: absolute;
+    width: 150px;
+
+}
+.circlle .outcirclle{
+    fill: #507cc0;
+}
+.circlle .incirclle{
+    fill: #b0357c;
+}
+.circlle{
+    fill: black;
+}
+.arrow{
+    fill: black;
+    transform: rotate(45deg);
+    animation: compass 20s infinite ease-in-out;
+}
+
+.arrow .uparrow{
+    fill: #507cc0;
+    
+}
+.arrow .downarrow{
+    fill: #b0357c;
+    
+}
+
+@keyframes compass {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(60deg);
+    }
+    20% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    30% {
+        transform: rotate(75deg);
+    }
+    35% {
+        transform: rotate(30deg);
+    }
+    40% {
+        transform: rotate(75deg);
+    }
+    45% {
+        transform: rotate(120deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    55% {
+        transform: rotate(110deg);
+    }
+    60% {
+        transform: rotate(280deg);
+    }
+    65% {
+        transform: rotate(200deg);
+    }
+    70% {
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: rotate(250deg);
+    }
+    80% {
+        transform: rotate(200deg);
+    }
+    85% {
+        transform: rotate(230deg);
+    }
+    90% {
+        transform: rotate(120deg);
+    }
+    95% {
+        transform: rotate(60deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
