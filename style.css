@@ -102,6 +102,14 @@ header div img{
     align-items: center;
     justify-content:center;
 }
+.compass{
+    width: 150px;
+    height: 150px;
+    margin-bottom: -25px;
+}
+.compass path{
+    fill: #b0357c;
+}
 .cont h1{
     width: 100%;
     text-align: center;
